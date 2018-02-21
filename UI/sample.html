@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Developer: Awungshi
+Purpose: Sample, for code reference
+Date: 2018-02-21
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>REST SERVICE EDITOR</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.6 -->
+		<link rel="stylesheet" href="lib/bootstrap.css">
+		<link rel="stylesheet" href="sample.css">
+		<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.js"></script>
+		<script type="text/javascript" src="sample.js"></script>
+	</head>
+
+	<body class="hold-transition skin-blue sidebar-mini sidebar-collapse" id="body">
+	<div class="wrapper">
+		<div class="col-lg-3 col-md-4  commonAlign containerHeader"><span>REST SERVICE EDITOR</span></div>
+		<div class="col-lg-3 col-md-4 bg-white commonAlign commonPadding">
+			<div class="con">
+				<label>DOMAIN/PATH</label> <br />
+				<input type="text" id="domain" value="http://localhost/index.php/items/" placeholder="api domain" class="controller form-control"/>
+			</div>
+			<div class="con">
+			  <label>CLASS/FUNCTION</label> <br />
+			  <input type="text" id="url" value="Sample/postJson" placeholder="api url" class="controller form-control"/>
+			</div>
+			<div class="con">
+			  <label>METHOD</label> <br />
+			  <select id="method" class="controller2 form-control">
+			  <option value="GET"> GET </option>
+			  <option value="POST" selected="selected"> POST </option>
+			  <option value="PUT"> PUT </option>
+			  <option value="DELETE"> DELETE </option>
+			  </select>
+			</div> <br >
+			<div class="con2">
+			  <label>PARAMETERS</label> <span id="addParam"> (+) </span>
+			</div>
+			<div class="con form-group paramCon">
+			 	<div class="input-group">
+					<input type="text" placeholder="jsonData" value=""  class="controller3 param  form-control"/>
+					<span class="input-group-addon  clabel">~</span>
+					<input type="text" placeholder='{"name":"athan","age":"34"}' value=''  class="controller3 param2 form-control"/>
+				</div>
+			</div>
+			<div class="con">
+			  <input type="button" value="SEND" class="controller2 form-control btn btn-outline-info" id="fetchDataBtn"/>
+			</div>
+			<div class="con">
+			  <label>RESULT</label>
+			</div>
+			<div class="con">
+			  <textarea id="resultField" class="form-control"></textarea>
+			</div>
+			<div class="con notice">
+				<strong>****NOTE:FOR CODE REFERENCE ONLY***</strong>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
